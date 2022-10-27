@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "grapevine",
+  "version": "${version}",
+  "name": "Grapevine",
+  "description": "Adds chat channels, including proximity chat",
+  "icon": "assets/grapevine/icon.png",
+  "authors": [
+    {
+      "name": "DenimRed",
+      "contact": {
+        "homepage": "https://github.com/DenimRed"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/DenimsMods/Grapevine",
+    "sources": "https://github.com/DenimsMods/Grapevine",
+    "issues": "https://github.com/DenimsMods/Grapevine/issues"
+  },
+  "license": "LGPL-3",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.denimred.grapevine.fabric.GrapevineFabric"
+    ]
+  },
+  "mixins": [
+    "grapevine-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.8.79"
+  }
+}
